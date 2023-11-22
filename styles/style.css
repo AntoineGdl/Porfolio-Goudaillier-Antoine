@@ -1,0 +1,129 @@
+:root{
+    --fond : #262335;
+    --titres: #fff;
+    --texte : #71689E;
+    --hover : #93919a;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2vw;
+    background-color: var(--fond);
+}
+
+/* HEADER */
+nav {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fond);
+}
+  
+.gauche {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    }
+
+.droite {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 2vw;
+   }
+
+.droite a,.gauche a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.droite a:hover,.gauche:hover{
+    border-bottom: 2px solid var(--hover);
+}
+
+
+/* SECTION PRINCIPALE */
+section{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-top: 20vh;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    padding-bottom: 20vh;
+    background-color: var(--fond);
+}
+
+h1 {
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    line-height: 10px;
+}
+.centrer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color : var(--texte);
+}
+
+.img-profile {
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    width: 10vw;
+}
+
+.fa-brands,.fa-solid,.fa-sharp{
+    color: var(--texte);
+    padding: 0.4vw;
+    font-size: 1.2vw;
+    transition: all 0.1s ease-in-out;
+}
+
+.fa-brands:hover,.fa-solid:hover,.fa-sharp:hover{
+    color: var(--hover);
+    transform: scale(1.2);
+}
+
+/* FOOTER */
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--fond);
+    height: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
+}
+
+.f2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--texte);
+}
+
+.f2 .fa-solid{
+    color: #71689E;
+    font-size: 1.2vw;
+    transition: all 0.1s ease-in-out;
+}
+
+.f2 .fa-solid:hover{
+    color: #fff;
+    transform: scale(1.2);
+}

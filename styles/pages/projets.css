@@ -1,0 +1,126 @@
+:root{
+    --fond : #262335;
+    --titres: #fff;
+    --texte : #71689E;
+    --hover : #93919a;
+    --textes : #d4d3d7;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2vw;
+    background-color: var(--fond);
+}
+
+/* HEADER */
+nav {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fond);
+}
+  
+.gauche {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    }
+
+.droite {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 2vw;
+   }
+
+.droite a,.gauche a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.droite a:hover,.gauche:hover{
+    border-bottom: 2px solid var(--hover);
+}
+
+/* SECTION PRINCIPALE */
+
+section{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    background-color: var(--fond);
+    
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+h1 {
+    padding-top: 1vh;
+    font-weight: 800;
+    color: var(--titres);
+}
+
+h2{
+    padding-top: 3vh;
+    line-height: 1vh;
+    font-size: 1.2vw;
+}
+
+a {
+    text-decoration: none;
+    color: var(--titres);
+}
+h2 a:hover{
+    border-bottom: solid 2px var(--hover);
+}
+.derniere-maj{
+    line-height: 10px;
+    font-size: 1vw;
+    color: var(--texte);
+}
+
+.description-brève{
+    width: 60%;
+    color: var(--textes);
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--fond);
+    height: 10vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: 100%;
+}
+
+.f2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--texte);
+}
+
+.f2 .fa-solid{
+    color: #71689E;
+    font-size: 1.2vw;
+    transition: all 0.1s ease-in-out;
+}
+
+.f2 .fa-solid:hover{
+    color: #fff;
+    transform: scale(1.2);
+}

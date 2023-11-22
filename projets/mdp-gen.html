@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gén Mdp · Antoine Goudaillier</title>
+    <link rel="stylesheet" href="/styles/pages/mdp-gen.css">
+    <!-- Icone de l'onglet -->
+    <link rel="icon" href="/images/a.ico">
+       <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="gauche">
+                <a href="/index.html">Antoine Goudaillier</a>
+            </div>
+
+            <div class="droite">
+                <a href="/pages/projets.html">Projets</a>
+                <a href="/pages/about.html">A propos</a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <h1><a href="/pages/projets.html">Projets</a> /</h1>
+        <h2>Générateur de mots de passe</h2>
+        <p class="date-modif">11 avril 2023 · Python</p>
+        <div class="explication-projet">
+            <p>Pour ce projet qui est de créer des mots de passe suivant les indications de l'utilisateur. 
+            <p>Pour cette première version le programme interagit beaucoup avec l'utilisateur.Les mots de passes sont définit selon 4 niveaux de complexité: Le premier niveau dans lequel le programme interroge l'utilisateur sur la taille du mot de passe.</p>
+            <div class="demo">
+                <p> >>> mdpNiv1(5)</p>
+                <p class="demo2">dhtbr</p>
+            </div>
+            <p>Le deuxième niveau où l'utilisateur peut à présent ajouter un nombre de chiffres à la fin de son mot de passe qu'il indiquera.</p>
+
+            <div class="demo"> 
+                <p> >>> mdpNiv2(5,2)</p> 
+                <p class="demo2">pozer79</p>
+            </div>       
+            <p>Le troisième niveau dans lequel l'utilisateur choisira parmi : le nombre de caractères en minuscules, le nombre de caractères en majuscules, le nombre de chiffres.</p>
+
+            <div class="demo">
+                <p> >>> mdpNiv3(5,5,2)</p>
+                <p class="demo2">tihbeZRHVF12</p>
+            </div>       
+
+            <p>Enfin pour ce quatrième et dernier niveau. Il le programme utilise ce qui a été fournit pour le troisième niveau et ajoute autant de caractères spéciaux que l'utilisateur aura indiqué.</p>
+
+            <div class="demo">
+                <p> >>> mdpNiv4(5,5,2,3)</p>  
+                <p class="demo2">jdothJZOGT61@^]</p>
+            </div>                  
+
+            <div class="maj">
+                <p>Pour ce qui est de la version 2 :</p>        
+                <p><i class="fa-solid fa-arrows-to-dot"></i> Le programme n'interrogera plus l'utilisateur sur le nombres de caractères, de chiffres, etc... mais uniquement sur le degré de complexité du mot de passe.</p>        
+                <p><i class="fa-solid fa-arrows-to-dot"></i> La réponse renvoyée par le programme ne sera plus séquencée comme c'est le cas. Par exemple, on aura des caractères entre les chiffres, entre les caractères spéciaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="f2">
+            <p>&copy; Antoine Goudaillier</p>
+            <i class="fa-solid fa-sun"></i>
+        </div>        
+    </footer>
+    </body>
+</html>
