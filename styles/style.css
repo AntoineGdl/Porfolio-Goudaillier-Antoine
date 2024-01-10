@@ -1,9 +1,9 @@
-:root{
+/*:root{
     --fond : #262335;
     --titres: #fff;
     --texte : #71689E;
     --hover : #93919a;
-}
+}*/
 
 body{
     margin: 0;
@@ -86,7 +86,7 @@ h1 {
 .fa-brands,.fa-solid,.fa-sharp{
     color: var(--texte);
     padding: 0.4vw;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     transition: all 0.1s ease-in-out;
 }
 
@@ -96,7 +96,7 @@ h1 {
 }
 
 /* FOOTER */
-
+/*
 
 footer {
     position: fixed;
@@ -126,4 +126,35 @@ footer {
 .f2 .fa-solid:hover{
     color: #fff;
     transform: scale(1.2);
+}
+
+.switcher{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 1.5vh;
+    margin-right: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.switcher input{
+    display: none;
+}
+*/
+
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.container-footer p{
+    color: var(--texte);
 }

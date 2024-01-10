@@ -109,6 +109,17 @@ h2{
 .alinea{
     padding-left: 150px;
 }
+
+.mon-github{
+    background-color: var(--fond);
+    border: none;
+}
+
+.mon-github a{
+    color: var(--titres);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2vw;
+}
 /* FOOTER */
 footer {
     position: fixed;

@@ -95,6 +95,7 @@ h2 a:hover{
 }
 
 /* FOOTER */
+/*
 footer {
     position: fixed;
     bottom: 0;
@@ -123,4 +124,18 @@ footer {
 .f2 .fa-solid:hover{
     color: #fff;
     transform: scale(1.2);
+}
+*/
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.container-footer p{
+    color: var(--texte);
 }
